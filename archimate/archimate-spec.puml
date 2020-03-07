@@ -1,0 +1,481 @@
+'This file is generated using archimate.go, do not edit
+
+
+
+@startuml images/stakeholder.png
+!include ../Archimate.puml
+stakeholder("stakeholder", "Stakeholder", "")
+@enduml
+
+@startuml images/driver.png
+!include ../Archimate.puml
+driver("driver", "Driver", "")
+@enduml
+
+@startuml images/assessment.png
+!include ../Archimate.puml
+assessment("assessment", "Assessment", "")
+@enduml
+
+@startuml images/goal.png
+!include ../Archimate.puml
+goal("goal", "Goal", "")
+@enduml
+
+@startuml images/outcome.png
+!include ../Archimate.puml
+outcome("outcome", "Outcome", "")
+@enduml
+
+@startuml images/principle.png
+!include ../Archimate.puml
+principle("principle", "Principle", "")
+@enduml
+
+@startuml images/requirement.png
+!include ../Archimate.puml
+requirement("requirement", "Requirement", "")
+@enduml
+
+@startuml images/constraint.png
+!include ../Archimate.puml
+constraint("constraint", "Constraint", "")
+@enduml
+
+@startuml images/meaning.png
+!include ../Archimate.puml
+meaning("meaning", "Meaning", "")
+@enduml
+
+@startuml images/value.png
+!include ../Archimate.puml
+value("value", "Value", "")
+@enduml
+
+
+
+@startuml images/resource.png
+!include ../Archimate.puml
+resource("resource", "Resource", "")
+@enduml
+
+@startuml images/capability.png
+!include ../Archimate.puml
+capability("capability", "Capability", "")
+@enduml
+
+@startuml images/valueStream.png
+!include ../Archimate.puml
+valueStream("valueStream", "Value\nstream", "")
+@enduml
+
+@startuml images/courseOfAction.png
+!include ../Archimate.puml
+courseOfAction("courseOfAction", "Course\nof\naction", "")
+@enduml
+
+
+
+@startuml images/businessActor.png
+!include ../Archimate.puml
+businessActor("businessActor", "Business\nActor", "")
+@enduml
+
+@startuml images/businessRole.png
+!include ../Archimate.puml
+businessRole("businessRole", "Business\nrole", "")
+@enduml
+
+@startuml images/businessCollaboration.png
+!include ../Archimate.puml
+businessCollaboration("businessCollaboration", "Business\ncollaboration", "")
+@enduml
+
+@startuml images/businessInterface.png
+!include ../Archimate.puml
+businessInterface("businessInterface", "Business\ninterface", "")
+@enduml
+
+@startuml images/businessProcess.png
+!include ../Archimate.puml
+businessProcess("businessProcess", "Business\nprocess", "")
+@enduml
+
+@startuml images/businessFunction.png
+!include ../Archimate.puml
+businessFunction("businessFunction", "Business\nfunction", "")
+@enduml
+
+@startuml images/businessInteraction.png
+!include ../Archimate.puml
+businessInteraction("businessInteraction", "Business\ninteraction", "")
+@enduml
+
+@startuml images/businessEvent.png
+!include ../Archimate.puml
+businessEvent("businessEvent", "Business\nevent", "")
+@enduml
+
+@startuml images/businessService.png
+!include ../Archimate.puml
+businessService("businessService", "Business\nservice", "")
+@enduml
+
+@startuml images/businessObject.png
+!include ../Archimate.puml
+businessObject("businessObject", "Business\nobject", "")
+@enduml
+
+@startuml images/contract.png
+!include ../Archimate.puml
+contract("contract", "Contract", "")
+@enduml
+
+@startuml images/representation.png
+!include ../Archimate.puml
+representation("representation", "Representation", "")
+@enduml
+
+@startuml images/product.png
+!include ../Archimate.puml
+product("product", "Product", "")
+@enduml
+
+
+
+@startuml images/applicationComponent.png
+!include ../Archimate.puml
+applicationComponent("applicationComponent", "Application\ncomponent", "")
+@enduml
+
+@startuml images/applicationCollaboration.png
+!include ../Archimate.puml
+applicationCollaboration("applicationCollaboration", "Application\ncollaboration", "")
+@enduml
+
+@startuml images/applicationInterface.png
+!include ../Archimate.puml
+applicationInterface("applicationInterface", "Application\ninterface", "")
+@enduml
+
+@startuml images/applicationFunction.png
+!include ../Archimate.puml
+applicationFunction("applicationFunction", "Application\nfunction", "")
+@enduml
+
+@startuml images/applicationInteraction.png
+!include ../Archimate.puml
+applicationInteraction("applicationInteraction", "Application\ninteraction", "")
+@enduml
+
+@startuml images/applicationProcess.png
+!include ../Archimate.puml
+applicationProcess("applicationProcess", "Application\nprocess", "")
+@enduml
+
+@startuml images/applicationEvent.png
+!include ../Archimate.puml
+applicationEvent("applicationEvent", "Application\nevent", "")
+@enduml
+
+@startuml images/applicationService.png
+!include ../Archimate.puml
+applicationService("applicationService", "Application\nservice", "")
+@enduml
+
+@startuml images/dataObject.png
+!include ../Archimate.puml
+dataObject("dataObject", "Data\nobject", "")
+@enduml
+
+
+
+@startuml images/node.png
+!include ../Archimate.puml
+node("node", "Node", "")
+@enduml
+
+@startuml images/device.png
+!include ../Archimate.puml
+device("device", "Device", "")
+@enduml
+
+@startuml images/systemSoftware.png
+!include ../Archimate.puml
+systemSoftware("systemSoftware", "System\nsoftware", "")
+@enduml
+
+@startuml images/technologyCollaboration.png
+!include ../Archimate.puml
+technologyCollaboration("technologyCollaboration", "Technology\ncollaboration", "")
+@enduml
+
+@startuml images/technologyInterface.png
+!include ../Archimate.puml
+technologyInterface("technologyInterface", "Technology\ninterface", "")
+@enduml
+
+@startuml images/path.png
+!include ../Archimate.puml
+path("path", "Path", "")
+@enduml
+
+@startuml images/communicationNetwork.png
+!include ../Archimate.puml
+communicationNetwork("communicationNetwork", "Communication\nnetwork", "")
+@enduml
+
+@startuml images/technologyFunction.png
+!include ../Archimate.puml
+technologyFunction("technologyFunction", "Technology\nfunction", "")
+@enduml
+
+@startuml images/technologyProcess.png
+!include ../Archimate.puml
+technologyProcess("technologyProcess", "Technology\nprocess", "")
+@enduml
+
+@startuml images/technologyInteraction.png
+!include ../Archimate.puml
+technologyInteraction("technologyInteraction", "Technology\ninteraction", "")
+@enduml
+
+@startuml images/technologyEvent.png
+!include ../Archimate.puml
+technologyEvent("technologyEvent", "Technology\nevent", "")
+@enduml
+
+@startuml images/technologyService.png
+!include ../Archimate.puml
+technologyService("technologyService", "Technology\nservice", "")
+@enduml
+
+@startuml images/artifact.png
+!include ../Archimate.puml
+artifact("artifact", "Artifact", "")
+@enduml
+
+
+
+@startuml images/equipment.png
+!include ../Archimate.puml
+equipment("equipment", "Equipment", "")
+@enduml
+
+@startuml images/facility.png
+!include ../Archimate.puml
+facility("facility", "Facility", "")
+@enduml
+
+@startuml images/distributionNetwork.png
+!include ../Archimate.puml
+distributionNetwork("distributionNetwork", "Distribution\nnetwork", "")
+@enduml
+
+@startuml images/material.png
+!include ../Archimate.puml
+material("material", "Material", "")
+@enduml
+
+
+
+@startuml images/workPackage.png
+!include ../Archimate.puml
+workPackage("workPackage", "Work\npackage", "")
+@enduml
+
+@startuml images/deliverable.png
+!include ../Archimate.puml
+deliverable("deliverable", "Deliverable", "")
+@enduml
+
+@startuml images/implementationEvent.png
+!include ../Archimate.puml
+implementationEvent("implementationEvent", "Implementation\nevent", "")
+@enduml
+
+@startuml images/plateau.png
+!include ../Archimate.puml
+plateau("plateau", "Plateau", "")
+@enduml
+
+@startuml images/gap.png
+!include ../Archimate.puml
+gap("gap", "Gap", "")
+@enduml
+
+
+
+@startuml images/location.png
+!include ../Archimate.puml
+location("location", "Location", "")
+@enduml
+
+@startuml images/grouping.png
+!include ../Archimate.puml
+grouping("grouping", "Grouping", "")
+@enduml
+
+
+
+
+
+@startuml images/composition.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+composition("a", "b", "right", "composition", "")
+@enduml
+
+@startuml images/aggregation.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+aggregation("a", "b", "right", "aggregation", "")
+@enduml
+
+@startuml images/assignment.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+assignment("a", "b", "right", "assignment", "")
+@enduml
+
+@startuml images/realization.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+realization("a", "b", "right", "realization", "")
+@enduml
+
+
+
+@startuml images/serving.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+serving("a", "b", "right", "serving", "")
+@enduml
+
+@startuml images/access.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+access("a", "b", "right", "access", "")
+@enduml
+
+@startuml images/accessR.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+accessR("a", "b", "right", "accessR", "")
+@enduml
+
+@startuml images/accessW.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+accessW("a", "b", "right", "accessW", "")
+@enduml
+
+@startuml images/accessRW.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+accessRW("a", "b", "right", "accessRW", "")
+@enduml
+
+@startuml images/influence.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+influence("a", "b", "right", "influence", "")
+@enduml
+
+@startuml images/association.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+association("a", "b", "right", "association", "")
+@enduml
+
+
+
+@startuml images/triggering.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+triggering("a", "b", "right", "triggering", "")
+@enduml
+
+@startuml images/flow.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+flow("a", "b", "right", "flow", "")
+@enduml
+
+
+
+@startuml images/specialization.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+specialization("a", "b", "right", "specialization", "")
+@enduml
+
+
+
+' Hand roll the two other elements
+
+@startuml images/junctionAnd.png
+!include ../Archimate.puml
+junctionAnd("a", "And")
+@enduml
+
+@startuml images/junctionOr.png
+!include ../Archimate.puml
+junctionOr("a", "Or")
+@enduml

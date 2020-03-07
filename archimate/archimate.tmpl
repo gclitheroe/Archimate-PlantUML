@@ -1,0 +1,108 @@
+' Archimate-PlantUML
+' Version 0.0.1
+' This file was generated with archimate.go only edit if you have made a local copy.
+
+!$radius = 15
+!$diagonal = 6
+
+skinparam DefaultFontName Helvetica
+skinparam DefaultFontSize 12
+skinparam DefaultTextAlignment center
+skinparam DefaultFontStyle normal
+skinparam wrapWidth 400
+skinparam maxMessageSize 150
+skinparam StereotypeAlignment right
+skinparam shadowing false
+
+skinparam ArchimateBorderThickness 1
+
+skinparam PackageBackgroundColor #ffffff
+skinparam PackageBorderThickness 1
+
+' the circle used for And Or junctions is an interface symbol
+skinparam InterfaceBorderColor #black
+
+skinparam Arrow {
+    Color #000000
+    FontColor #000000
+    FontSize 12
+}
+
+skinparam Folder<<grouping>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+skinparam archimate {
+  StereotypeAlignment right
+  RoundCorner<<strategy-capability>> $radius
+  RoundCorner<<strategy-course-of-action>> $radius
+  RoundCorner<<business-process>> $radius
+  RoundCorner<<business-function>> $radius
+  RoundCorner<<business-interaction>> $radius
+  RoundCorner<<business-event>> $radius
+  RoundCorner<<business-service>> $radius
+  RoundCorner<<application-function>> $radius
+  RoundCorner<<application-interaction>> $radius
+  RoundCorner<<application-process>> $radius
+  RoundCorner<<application-event>> $radius
+  RoundCorner<<application-service>> $radius
+  RoundCorner<<technology-function>> $radius
+  RoundCorner<<technology-process>> $radius
+  RoundCorner<<technology-interaction>> $radius
+  RoundCorner<<technology-event>> $radius
+  RoundCorner<<technology-infra-service>> $radius
+  RoundCorner<<implementation-workpackage>> $radius
+  RoundCorner<<implementation-event>> $radius
+  DiagonalCorner<<motivation-stakeholder>> $diagonal
+  DiagonalCorner<<motivation-driver>> $diagonal
+  DiagonalCorner<<motivation-assessment>> $diagonal
+  DiagonalCorner<<motivation-goal>> $diagonal
+  DiagonalCorner<<motivation-outcome>> $diagonal
+  DiagonalCorner<<motivation-principle>> $diagonal
+  DiagonalCorner<<motivation-requirement>> $diagonal
+  DiagonalCorner<<motivation-constraint>> $diagonal
+}
+
+' Layout
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
+
+'Relationships
+
+{{range .Relationships}}
+'{{.Name}}
+{{range .Relationships}}
+!function {{.Cmd}}($source, $target, $orientation, $name, $documentation)
+$source {{.Plant}} $target : " "$name
+!endfunction
+
+{{end}}
+{{end}}
+
+
+'Elements
+
+{{range .Elements}}
+'{{.Name}}
+{{range .Elements}}
+!function {{.Cmd}}($id, $name, $documentation)
+{{.Style}} {{.Colour}} "$name" {{.StereoType}} as $id
+!log "Element","{{.Name}}","$id","$name","$documentation"
+!endfunction
+
+{{end}}
+{{end}}
+
+'Other Elements
+
+!function junctionOr($id, $name)
+circle #white " $name" as $id
+!endfunction
+
+!function junctionAnd($id, $name)
+circle #black " $name" as $id
+!endfunction

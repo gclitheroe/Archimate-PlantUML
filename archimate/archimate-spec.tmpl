@@ -1,0 +1,36 @@
+'This file is generated using archimate.go, do not edit
+
+{{range .Elements}}
+{{range .Elements}}
+@startuml images/{{.Cmd}}.png
+!include ../Archimate.puml
+{{.Cmd}}("{{.Cmd}}", "{{.Label}}", "")
+@enduml
+{{end}}
+{{end}}
+
+{{range .Relationships}}
+{{range .Relationships}}
+@startuml images/{{.Cmd}}.png
+!include ../Archimate.puml
+skinparam UsecaseBorderColor white
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor white
+(a) as a
+(b) as b
+{{.Cmd}}("a", "b", "right", "{{.Cmd}}", "")
+@enduml
+{{end}}
+{{end}}
+
+' Hand roll the two other elements
+
+@startuml images/junctionAnd.png
+!include ../Archimate.puml
+junctionAnd("a", "And")
+@enduml
+
+@startuml images/junctionOr.png
+!include ../Archimate.puml
+junctionOr("a", "Or")
+@enduml

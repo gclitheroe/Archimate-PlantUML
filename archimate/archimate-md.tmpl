@@ -1,0 +1,58 @@
+# Archimate
+
+Archimate functions for PlantUML.
+
+All element definitions follow the same pattern:
+
+```
+elementName('id', 'name', 'documentation`)
+```
+
+All relationship definitions follow the same pattern:
+
+```
+relationship('source', 'target', 'orientation', 'name', 'documentation')
+```
+
+`source` and `target` are the `id` of corresponding elements.
+
+Orientation gives a layout hint for the orientation of the relationship.  Valid values are:
+
+* '' (empty string for no hint)
+* `left`
+* `right`
+* `up`
+* `down`
+
+## Archimate Elements
+
+***Note:*** this file is generated using `archimate.go`, do not edit.
+
+{{range .Elements}}
+
+### {{.Name}}
+
+Element | PlantUML | Definition | Notation
+------ | ------ | ------- | :-------:{{range .Elements}}
+{{.Name}} | `{{.Cmd}}(...)`  | {{.Definition}} | <img width=700 /> ![](images/{{.Cmd}}.png){{end}}
+
+{{end}}
+
+## Archimate Relationships
+
+{{range .Relationships}}
+
+### {{.Name}}
+
+Element | PlantUML | Definition | Notation
+------ | ------ | ------- | :-------:{{range .Relationships}}
+{{.Name}} | `{{.Cmd}}(...)`  | {{.Definition}} | <img width=700 /> ![](images/{{.Cmd}}.png){{end}}
+
+{{end}}
+
+### Relationship Connectors
+
+Element | PlantUML | Definition | Notation
+------ | ------ | ------- | :-------:
+Junction And | `junctionAnd(...)`  | Used to connect relationships of the same type. | <img width=700 /> ![](images/junctionAnd.png)
+Junction Or | `junctionOr(...)`  | Used to connect relationships of the same type. | <img width=700 /> ![](images/junctionOr.png)

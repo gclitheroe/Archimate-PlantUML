@@ -1,0 +1,19 @@
+@startuml
+!include ../Archimate.puml
+
+skinparam wrapWidth 80
+
+applicationComponent('a', 'Application', 'This is the application component.')
+dataObject('d', 'Application Data', 'The application reads this data.')
+applicationService('s', 'Application Service', 'The service the application provides.')
+applicationInterface('ui','Application Web UI','The application UI.')
+applicationService('s1', 'Service 1', 'Provides service 1.')
+applicationService('s2', 'Service 2', 'Provides service 2.')
+
+accessR('a', 'd', 'left', 'read', '')
+realization('a', 's', 'up', 'realization', '')
+serving('s1', 'a', 'up', 'serves','')
+serving('s2', 'a', 'up', '','')
+composition('a', 'ui', 'up', 'composition', '')
+assignment('ui', 's', 'left', 'assignment', '')
+@enduml

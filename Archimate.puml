@@ -1,0 +1,557 @@
+' Archimate-PlantUML
+' Version 0.0.1
+' This file was generated with archimate.go only edit if you have made a local copy.
+
+!$radius = 15
+!$diagonal = 6
+
+skinparam DefaultFontName Helvetica
+skinparam DefaultFontSize 12
+skinparam DefaultTextAlignment center
+skinparam DefaultFontStyle normal
+skinparam wrapWidth 400
+skinparam maxMessageSize 150
+skinparam StereotypeAlignment right
+skinparam shadowing false
+
+skinparam ArchimateBorderThickness 1
+
+skinparam PackageBackgroundColor #ffffff
+skinparam PackageBorderThickness 1
+
+' the circle used for And Or junctions is an interface symbol
+skinparam InterfaceBorderColor #black
+
+skinparam Arrow {
+    Color #000000
+    FontColor #000000
+    FontSize 12
+}
+
+skinparam Folder<<grouping>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+skinparam archimate {
+  StereotypeAlignment right
+  RoundCorner<<strategy-capability>> $radius
+  RoundCorner<<strategy-course-of-action>> $radius
+  RoundCorner<<business-process>> $radius
+  RoundCorner<<business-function>> $radius
+  RoundCorner<<business-interaction>> $radius
+  RoundCorner<<business-event>> $radius
+  RoundCorner<<business-service>> $radius
+  RoundCorner<<application-function>> $radius
+  RoundCorner<<application-interaction>> $radius
+  RoundCorner<<application-process>> $radius
+  RoundCorner<<application-event>> $radius
+  RoundCorner<<application-service>> $radius
+  RoundCorner<<technology-function>> $radius
+  RoundCorner<<technology-process>> $radius
+  RoundCorner<<technology-interaction>> $radius
+  RoundCorner<<technology-event>> $radius
+  RoundCorner<<technology-infra-service>> $radius
+  RoundCorner<<implementation-workpackage>> $radius
+  RoundCorner<<implementation-event>> $radius
+  DiagonalCorner<<motivation-stakeholder>> $diagonal
+  DiagonalCorner<<motivation-driver>> $diagonal
+  DiagonalCorner<<motivation-assessment>> $diagonal
+  DiagonalCorner<<motivation-goal>> $diagonal
+  DiagonalCorner<<motivation-outcome>> $diagonal
+  DiagonalCorner<<motivation-principle>> $diagonal
+  DiagonalCorner<<motivation-requirement>> $diagonal
+  DiagonalCorner<<motivation-constraint>> $diagonal
+}
+
+' Layout
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
+
+'Relationships
+
+
+'Structural Relationships
+
+!function composition($source, $target, $orientation, $name, $documentation)
+$source *-$orientation- $target : " "$name
+!endfunction
+
+
+!function aggregation($source, $target, $orientation, $name, $documentation)
+$source o-$orientation- $target : " "$name
+!endfunction
+
+
+!function assignment($source, $target, $orientation, $name, $documentation)
+$source 0-$orientation-> $target : " "$name
+!endfunction
+
+
+!function realization($source, $target, $orientation, $name, $documentation)
+$source ~$orientation~|> $target : " "$name
+!endfunction
+
+
+
+'Dependency Relationships
+
+!function serving($source, $target, $orientation, $name, $documentation)
+$source -$orientation-> $target : " "$name
+!endfunction
+
+
+!function access($source, $target, $orientation, $name, $documentation)
+$source ~$orientation~ $target : " "$name
+!endfunction
+
+
+!function accessR($source, $target, $orientation, $name, $documentation)
+$source <~$orientation~ $target : " "$name
+!endfunction
+
+
+!function accessW($source, $target, $orientation, $name, $documentation)
+$source ~$orientation~> $target : " "$name
+!endfunction
+
+
+!function accessRW($source, $target, $orientation, $name, $documentation)
+$source <~$orientation~> $target : " "$name
+!endfunction
+
+
+!function influence($source, $target, $orientation, $name, $documentation)
+$source .$orientation.> $target : " "$name
+!endfunction
+
+
+!function association($source, $target, $orientation, $name, $documentation)
+$source -$orientation- $target : " "$name
+!endfunction
+
+
+
+'Dynamic Relationships
+
+!function triggering($source, $target, $orientation, $name, $documentation)
+$source -$orientation->> $target : " "$name
+!endfunction
+
+
+!function flow($source, $target, $orientation, $name, $documentation)
+$source .$orientation.>> $target : " "$name
+!endfunction
+
+
+
+'Other Relationships
+
+!function specialization($source, $target, $orientation, $name, $documentation)
+$source -$orientation-|> $target : " "$name
+!endfunction
+
+
+
+
+
+'Elements
+
+
+'Motivation Elements
+
+!function stakeholder($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-stakeholder>> as $id
+!log "Element","Stakeholder","$id","$name","$documentation"
+!endfunction
+
+
+!function driver($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-driver>> as $id
+!log "Element","Driver","$id","$name","$documentation"
+!endfunction
+
+
+!function assessment($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-assessment>> as $id
+!log "Element","Assessment","$id","$name","$documentation"
+!endfunction
+
+
+!function goal($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-goal>> as $id
+!log "Element","Goal","$id","$name","$documentation"
+!endfunction
+
+
+!function outcome($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-outcome>> as $id
+!log "Element","Outcome","$id","$name","$documentation"
+!endfunction
+
+
+!function principle($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-principle>> as $id
+!log "Element","Principle","$id","$name","$documentation"
+!endfunction
+
+
+!function requirement($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-requirement>> as $id
+!log "Element","Requirement","$id","$name","$documentation"
+!endfunction
+
+
+!function constraint($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-constraint>> as $id
+!log "Element","Constraint","$id","$name","$documentation"
+!endfunction
+
+
+!function meaning($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-meaning>> as $id
+!log "Element","Meaning","$id","$name","$documentation"
+!endfunction
+
+
+!function value($id, $name, $documentation)
+archimate #ccccff "$name" <<motivation-value>> as $id
+!log "Element","Value","$id","$name","$documentation"
+!endfunction
+
+
+
+'Strategy Elements
+
+!function resource($id, $name, $documentation)
+archimate #f5deaa "$name" <<strategy-resource>> as $id
+!log "Element","Resource","$id","$name","$documentation"
+!endfunction
+
+
+!function capability($id, $name, $documentation)
+archimate #f5deaa "$name" <<strategy-capability>> as $id
+!log "Element","Capability","$id","$name","$documentation"
+!endfunction
+
+
+!function valueStream($id, $name, $documentation)
+archimate #f5deaa "$name" <<strategy-value-stream>> as $id
+!log "Element","Value stream","$id","$name","$documentation"
+!endfunction
+
+
+!function courseOfAction($id, $name, $documentation)
+archimate #f5deaa "$name" <<strategy-course-of-action>> as $id
+!log "Element","Course of action","$id","$name","$documentation"
+!endfunction
+
+
+
+'Business Layer Elements
+
+!function businessActor($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-actor>> as $id
+!log "Element","Business Actor","$id","$name","$documentation"
+!endfunction
+
+
+!function businessRole($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-role>> as $id
+!log "Element","Business role","$id","$name","$documentation"
+!endfunction
+
+
+!function businessCollaboration($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-collaboration>> as $id
+!log "Element","Business collaboration","$id","$name","$documentation"
+!endfunction
+
+
+!function businessInterface($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-interface>> as $id
+!log "Element","Business interface","$id","$name","$documentation"
+!endfunction
+
+
+!function businessProcess($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-process>> as $id
+!log "Element","Business process","$id","$name","$documentation"
+!endfunction
+
+
+!function businessFunction($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-function>> as $id
+!log "Element","Business function","$id","$name","$documentation"
+!endfunction
+
+
+!function businessInteraction($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-interaction>> as $id
+!log "Element","Business interaction","$id","$name","$documentation"
+!endfunction
+
+
+!function businessEvent($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-event>> as $id
+!log "Element","Business event","$id","$name","$documentation"
+!endfunction
+
+
+!function businessService($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-service>> as $id
+!log "Element","Business service","$id","$name","$documentation"
+!endfunction
+
+
+!function businessObject($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-object>> as $id
+!log "Element","Business object","$id","$name","$documentation"
+!endfunction
+
+
+!function contract($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-contract>> as $id
+!log "Element","Contract","$id","$name","$documentation"
+!endfunction
+
+
+!function representation($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-representation>> as $id
+!log "Element","Representation","$id","$name","$documentation"
+!endfunction
+
+
+!function product($id, $name, $documentation)
+archimate #ffffb5 "$name" <<business-product>> as $id
+!log "Element","Product","$id","$name","$documentation"
+!endfunction
+
+
+
+'Application Layer Elements
+
+!function applicationComponent($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-component>> as $id
+!log "Element","Application component","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationCollaboration($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-collaboration>> as $id
+!log "Element","Application collaboration","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationInterface($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-interface>> as $id
+!log "Element","Application interface","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationFunction($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-function>> as $id
+!log "Element","Application function","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationInteraction($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-interaction>> as $id
+!log "Element","Application interaction","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationProcess($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-process>> as $id
+!log "Element","Application process","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationEvent($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-event>> as $id
+!log "Element","Application event","$id","$name","$documentation"
+!endfunction
+
+
+!function applicationService($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-service>> as $id
+!log "Element","Application service","$id","$name","$documentation"
+!endfunction
+
+
+!function dataObject($id, $name, $documentation)
+archimate #b5ffff "$name" <<application-data-object>> as $id
+!log "Element","Data object","$id","$name","$documentation"
+!endfunction
+
+
+
+'Technology Layer Elements
+
+!function node($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-node>> as $id
+!log "Element","Node","$id","$name","$documentation"
+!endfunction
+
+
+!function device($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-device>> as $id
+!log "Element","Device","$id","$name","$documentation"
+!endfunction
+
+
+!function systemSoftware($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-system-software>> as $id
+!log "Element","System software","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyCollaboration($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-collaboration>> as $id
+!log "Element","Technology collaboration","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyInterface($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-interface>> as $id
+!log "Element","Technology interface","$id","$name","$documentation"
+!endfunction
+
+
+!function path($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-path>> as $id
+!log "Element","Path","$id","$name","$documentation"
+!endfunction
+
+
+!function communicationNetwork($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-network>> as $id
+!log "Element","Communication network","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyFunction($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-function>> as $id
+!log "Element","Technology function","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyProcess($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-process>> as $id
+!log "Element","Technology process","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyInteraction($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-interaction>> as $id
+!log "Element","Technology interaction","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyEvent($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-event>> as $id
+!log "Element","Technology event","$id","$name","$documentation"
+!endfunction
+
+
+!function technologyService($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-service>> as $id
+!log "Element","Technology service","$id","$name","$documentation"
+!endfunction
+
+
+!function artifact($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<technology-artifact>> as $id
+!log "Element","Artifact","$id","$name","$documentation"
+!endfunction
+
+
+
+'Physical Elements
+
+!function equipment($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<physical-equipment>> as $id
+!log "Element","Equipment","$id","$name","$documentation"
+!endfunction
+
+
+!function facility($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<physical-facility>> as $id
+!log "Element","Facility","$id","$name","$documentation"
+!endfunction
+
+
+!function distributionNetwork($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<physical-distribution-network>> as $id
+!log "Element","Distribution network","$id","$name","$documentation"
+!endfunction
+
+
+!function material($id, $name, $documentation)
+archimate #c9e7b7 "$name" <<physical-material>> as $id
+!log "Element","Material","$id","$name","$documentation"
+!endfunction
+
+
+
+'Migration Elements
+
+!function workPackage($id, $name, $documentation)
+archimate #ffe0e0 "$name" <<implementation-workpackage>> as $id
+!log "Element","Work package","$id","$name","$documentation"
+!endfunction
+
+
+!function deliverable($id, $name, $documentation)
+archimate #ffe0e0 "$name" <<implementation-deliverable>> as $id
+!log "Element","Deliverable","$id","$name","$documentation"
+!endfunction
+
+
+!function implementationEvent($id, $name, $documentation)
+archimate #ffe0e0 "$name" <<implementation-event>> as $id
+!log "Element","Implementation event","$id","$name","$documentation"
+!endfunction
+
+
+!function plateau($id, $name, $documentation)
+archimate #e0ffe0 "$name" <<implementation-plateau>> as $id
+!log "Element","Plateau","$id","$name","$documentation"
+!endfunction
+
+
+!function gap($id, $name, $documentation)
+archimate #e0ffe0 "$name" <<implementation-gap>> as $id
+!log "Element","Gap","$id","$name","$documentation"
+!endfunction
+
+
+
+'Composite Elements
+
+!function location($id, $name, $documentation)
+archimate #fbb875 "$name" <<location>> as $id
+!log "Element","Location","$id","$name","$documentation"
+!endfunction
+
+
+!function grouping($id, $name, $documentation)
+Folder #ffffff "$name" <<grouping>> as $id
+!log "Element","Grouping","$id","$name","$documentation"
+!endfunction
+
+
+
+
+'Other Elements
+
+!function junctionOr($id, $name)
+circle #white " $name" as $id
+!endfunction
+
+!function junctionAnd($id, $name)
+circle #black " $name" as $id
+!endfunction
