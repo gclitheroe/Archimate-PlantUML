@@ -16,6 +16,8 @@ skinparam shadowing false
 
 skinparam ArchimateBorderThickness 1
 
+skinparam wrapWidth 80
+
 skinparam PackageBackgroundColor #ffffff
 skinparam PackageBorderThickness 1
 
