@@ -201,7 +201,7 @@ var archi = archimate{
 				{Name: "Location", Definition: "A location represents a conceptual or physical place or position where concepts are located (e.g., structure Elements) or performed (e.g., behavior Elements).",
 					StereoType: "<<location>>", Style: "archimate", Colour: "#fbb875"},
 				{Name: "Grouping", Definition: "The grouping element aggregates or composes concepts that belong together based on some common characteristic.",
-					StereoType: "<<grouping>>", Style: "Folder", Colour: "#ffffff"},
+					StereoType: "<<grouping>>", Style: "Folder", Colour: ""}, // setting colour on folder causes a bug
 			},
 		},
 	},
