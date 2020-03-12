@@ -5,6 +5,9 @@ Macros for creating [Archimate](https://pubs.opengroup.org/architecture/archimat
 
 ## Installation
 
+***Note:*** requires Version 1.2020.2 of the PlantUML jar or higher.  If you are using an IDE plugin with an older version it may be
+necessary to find the PlantUML jar being used by the plugin and replace it with newer one. 
+
 Download [Archimate.puml](Archimate.puml) and reference it as an import in PlantUML files:
 
 ```
@@ -23,6 +26,13 @@ All element definitions follow the same pattern:
 
 ```
 elementName('id', 'name', 'documentation`)
+```
+
+All elements have a corresponding sprite function (except for a small number missing from the plantuml.jar) for use in
+legends etc:
+
+```
+elementNameKey()
 ```
 
 ### Archimate Relationships
@@ -67,8 +77,6 @@ example-1.puml:
 @startuml
 !include Archimate.puml
 
-skinparam wrapWidth 80
-
 applicationComponent('a', 'Application', 'This is the application component.')
 dataObject('d', 'Application Data', 'The application reads this data.')
 applicationService('s', 'Application Service', 'The service the application provides.')
@@ -83,6 +91,17 @@ serving('s2', 'a', 'up', '','')
 composition('a', 'ui', 'up', 'composition', '')
 assignment('ui', 's', 'left', 'assignment', '')
 @enduml
+
+legend right
+**legend**
+
+applicationComponentKey()
+
+applicationServiceKey()
+
+dataObjectKey()
+
+endlegend
 ```
 
 ![](examples/example-1.png)

@@ -15,4 +15,14 @@ serving('s2', 'a', 'up', '','')
 composition('a', 'ui', 'up', 'composition', '')
 assignment('ui', 's', 'left', 'assignment', '')
 
+legend right
+**legend**
+
+applicationComponentKey()
+
+applicationServiceKey()
+
+dataObjectKey()
+
+endlegend
 @enduml

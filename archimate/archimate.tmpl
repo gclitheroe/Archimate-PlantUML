@@ -108,3 +108,15 @@ circle #white " $name" as $id
 !function junctionAnd($id, $name)
 circle #black " $name" as $id
 !endfunction
+
+
+{{range $j, $_ := .Elements}}
+'{{.Name}}
+{{range $i, $v := .Elements}}
+sprite $sprite{{$j}}{{$i}} jar:archimate/{{$v.Sprite}}
+!function {{.Cmd}}Key()
+<$sprite{{$j}}{{$i}}> {{$v.Name}}
+!endfunction
+
+{{end}}
+{{end}}

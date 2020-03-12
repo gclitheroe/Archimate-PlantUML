@@ -2,6 +2,10 @@
 // usage:
 // go run archimate.go
 // java -jar ~/lib/plantuml.jar archimate-spec.puml
+//
+// There are some Archimate sprites missing in the plantuml jar.  After generating check
+// rendering examples/example-1.puml and see if there are missing sprite errors from Archimate.puml and comment
+// out any that cause errors.
 package main
 
 import (
@@ -311,6 +315,10 @@ func (e element) Cmd() string {
 	}
 	r, n := utf8.DecodeRuneInString(s)
 	return string(unicode.ToLower(r)) + s[n:]
+}
+
+func (e element) Sprite() string {
+	return strings.ReplaceAll(strings.ReplaceAll(e.StereoType, "<<", ""), ">>", "")
 }
 
 func (e element) Label() string {

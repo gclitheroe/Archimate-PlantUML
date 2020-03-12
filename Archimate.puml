@@ -35,7 +35,7 @@ skinparam Folder<<grouping>> {
     StereotypeFontSize 0
     FontColor #444444
     BorderColor #444444
-    BorderStyle dashed
+    BackgroundColor #ffffff
 }
 
 skinparam archimate {
@@ -541,7 +541,7 @@ archimate #fbb875 "$name" <<location>> as $id
 
 
 !function grouping($id, $name, $documentation)
-Folder #ffffff "$name" <<grouping>> as $id
+Folder  "$name" <<grouping>> as $id
 !log "Element","Grouping","$id","$name","$documentation"
 !endfunction
 
@@ -557,3 +557,390 @@ circle #white " $name" as $id
 !function junctionAnd($id, $name)
 circle #black " $name" as $id
 !endfunction
+
+
+
+'Motivation Elements
+
+sprite $sprite00 jar:archimate/motivation-stakeholder
+!function stakeholderKey()
+<$sprite00> Stakeholder
+!endfunction
+
+
+sprite $sprite01 jar:archimate/motivation-driver
+!function driverKey()
+<$sprite01> Driver
+!endfunction
+
+
+sprite $sprite02 jar:archimate/motivation-assessment
+!function assessmentKey()
+<$sprite02> Assessment
+!endfunction
+
+
+sprite $sprite03 jar:archimate/motivation-goal
+!function goalKey()
+<$sprite03> Goal
+!endfunction
+
+
+sprite $sprite04 jar:archimate/motivation-outcome
+!function outcomeKey()
+<$sprite04> Outcome
+!endfunction
+
+
+sprite $sprite05 jar:archimate/motivation-principle
+!function principleKey()
+<$sprite05> Principle
+!endfunction
+
+
+sprite $sprite06 jar:archimate/motivation-requirement
+!function requirementKey()
+<$sprite06> Requirement
+!endfunction
+
+
+sprite $sprite07 jar:archimate/motivation-constraint
+!function constraintKey()
+<$sprite07> Constraint
+!endfunction
+
+
+sprite $sprite08 jar:archimate/motivation-meaning
+!function meaningKey()
+<$sprite08> Meaning
+!endfunction
+
+
+sprite $sprite09 jar:archimate/motivation-value
+!function valueKey()
+<$sprite09> Value
+!endfunction
+
+
+
+'Strategy Elements
+
+sprite $sprite10 jar:archimate/strategy-resource
+!function resourceKey()
+<$sprite10> Resource
+!endfunction
+
+
+sprite $sprite11 jar:archimate/strategy-capability
+!function capabilityKey()
+<$sprite11> Capability
+!endfunction
+
+
+sprite $sprite12 jar:archimate/strategy-value-stream
+!function valueStreamKey()
+<$sprite12> Value stream
+!endfunction
+
+
+sprite $sprite13 jar:archimate/strategy-course-of-action
+!function courseOfActionKey()
+<$sprite13> Course of action
+!endfunction
+
+
+
+'Business Layer Elements
+
+sprite $sprite20 jar:archimate/business-actor
+!function businessActorKey()
+<$sprite20> Business Actor
+!endfunction
+
+
+sprite $sprite21 jar:archimate/business-role
+!function businessRoleKey()
+<$sprite21> Business role
+!endfunction
+
+
+sprite $sprite22 jar:archimate/business-collaboration
+!function businessCollaborationKey()
+<$sprite22> Business collaboration
+!endfunction
+
+
+sprite $sprite23 jar:archimate/business-interface
+!function businessInterfaceKey()
+<$sprite23> Business interface
+!endfunction
+
+
+sprite $sprite24 jar:archimate/business-process
+!function businessProcessKey()
+<$sprite24> Business process
+!endfunction
+
+
+sprite $sprite25 jar:archimate/business-function
+!function businessFunctionKey()
+<$sprite25> Business function
+!endfunction
+
+
+sprite $sprite26 jar:archimate/business-interaction
+!function businessInteractionKey()
+<$sprite26> Business interaction
+!endfunction
+
+
+sprite $sprite27 jar:archimate/business-event
+!function businessEventKey()
+<$sprite27> Business event
+!endfunction
+
+
+sprite $sprite28 jar:archimate/business-service
+!function businessServiceKey()
+<$sprite28> Business service
+!endfunction
+
+
+sprite $sprite29 jar:archimate/business-object
+!function businessObjectKey()
+<$sprite29> Business object
+!endfunction
+
+
+sprite $sprite210 jar:archimate/business-contract
+!function contractKey()
+<$sprite210> Contract
+!endfunction
+
+
+sprite $sprite211 jar:archimate/business-representation
+!function representationKey()
+<$sprite211> Representation
+!endfunction
+
+
+sprite $sprite212 jar:archimate/business-product
+!function productKey()
+<$sprite212> Product
+!endfunction
+
+
+
+'Application Layer Elements
+
+sprite $sprite30 jar:archimate/application-component
+!function applicationComponentKey()
+<$sprite30> Application component
+!endfunction
+
+
+sprite $sprite31 jar:archimate/application-collaboration
+!function applicationCollaborationKey()
+<$sprite31> Application collaboration
+!endfunction
+
+
+sprite $sprite32 jar:archimate/application-interface
+!function applicationInterfaceKey()
+<$sprite32> Application interface
+!endfunction
+
+
+sprite $sprite33 jar:archimate/application-function
+!function applicationFunctionKey()
+<$sprite33> Application function
+!endfunction
+
+
+sprite $sprite34 jar:archimate/application-interaction
+!function applicationInteractionKey()
+<$sprite34> Application interaction
+!endfunction
+
+
+sprite $sprite35 jar:archimate/application-process
+!function applicationProcessKey()
+<$sprite35> Application process
+!endfunction
+
+
+sprite $sprite36 jar:archimate/application-event
+!function applicationEventKey()
+<$sprite36> Application event
+!endfunction
+
+
+sprite $sprite37 jar:archimate/application-service
+!function applicationServiceKey()
+<$sprite37> Application service
+!endfunction
+
+
+sprite $sprite38 jar:archimate/application-data-object
+!function dataObjectKey()
+<$sprite38> Data object
+!endfunction
+
+
+
+'Technology Layer Elements
+
+sprite $sprite40 jar:archimate/technology-node
+!function nodeKey()
+<$sprite40> Node
+!endfunction
+
+
+sprite $sprite41 jar:archimate/technology-device
+!function deviceKey()
+<$sprite41> Device
+!endfunction
+
+
+sprite $sprite42 jar:archimate/technology-system-software
+!function systemSoftwareKey()
+<$sprite42> System software
+!endfunction
+
+
+sprite $sprite43 jar:archimate/technology-collaboration
+!function technologyCollaborationKey()
+<$sprite43> Technology collaboration
+!endfunction
+
+
+sprite $sprite44 jar:archimate/technology-interface
+!function technologyInterfaceKey()
+<$sprite44> Technology interface
+!endfunction
+
+
+sprite $sprite45 jar:archimate/technology-path
+!function pathKey()
+<$sprite45> Path
+!endfunction
+
+
+sprite $sprite46 jar:archimate/technology-network
+!function communicationNetworkKey()
+<$sprite46> Communication network
+!endfunction
+
+
+sprite $sprite47 jar:archimate/technology-function
+!function technologyFunctionKey()
+<$sprite47> Technology function
+!endfunction
+
+
+sprite $sprite48 jar:archimate/technology-process
+!function technologyProcessKey()
+<$sprite48> Technology process
+!endfunction
+
+
+sprite $sprite49 jar:archimate/technology-interaction
+!function technologyInteractionKey()
+<$sprite49> Technology interaction
+!endfunction
+
+
+sprite $sprite410 jar:archimate/technology-event
+!function technologyEventKey()
+<$sprite410> Technology event
+!endfunction
+
+
+sprite $sprite411 jar:archimate/technology-service
+!function technologyServiceKey()
+<$sprite411> Technology service
+!endfunction
+
+
+sprite $sprite412 jar:archimate/technology-artifact
+!function artifactKey()
+<$sprite412> Artifact
+!endfunction
+
+
+
+'Physical Elements
+
+sprite $sprite50 jar:archimate/physical-equipment
+!function equipmentKey()
+<$sprite50> Equipment
+!endfunction
+
+
+sprite $sprite51 jar:archimate/physical-facility
+!function facilityKey()
+<$sprite51> Facility
+!endfunction
+
+
+sprite $sprite52 jar:archimate/physical-distribution-network
+!function distributionNetworkKey()
+<$sprite52> Distribution network
+!endfunction
+
+
+sprite $sprite53 jar:archimate/physical-material
+!function materialKey()
+<$sprite53> Material
+!endfunction
+
+
+
+'Migration Elements
+
+sprite $sprite60 jar:archimate/implementation-workpackage
+!function workPackageKey()
+<$sprite60> Work package
+!endfunction
+
+
+'sprite $sprite61 jar:archimate/implementation-deliverable
+'!function deliverableKey()
+'<$sprite61> Deliverable
+'!endfunction
+'
+'
+'sprite $sprite62 jar:archimate/implementation-event
+'!function implementationEventKey()
+'<$sprite62> Implementation event
+'!endfunction
+'
+'
+'sprite $sprite63 jar:archimate/implementation-plateau
+'!function plateauKey()
+'<$sprite63> Plateau
+'!endfunction
+'
+'
+'sprite $sprite64 jar:archimate/implementation-gap
+'!function gapKey()
+'<$sprite64> Gap
+'!endfunction
+
+
+
+'Composite Elements
+
+'sprite $sprite70 jar:archimate/location
+'!function locationKey()
+'<$sprite70> Location
+'!endfunction
+'
+'
+'sprite $sprite71 jar:archimate/grouping
+'!function groupingKey()
+'<$sprite71> Grouping
+'!endfunction
+
+
+
